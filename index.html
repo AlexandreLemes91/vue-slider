@@ -15,7 +15,11 @@
 <body>
     
     <div id="app">
-        <div @mouseenter="stopTransition" @mouseleave="picTransition" class="container">
+        <div
+        @mouseenter="stopTransition"
+        @mouseleave="picTransition"
+        class="container">
+        
             <i @click="prevPic" class="fas fa-chevron-circle-left"></i>
             <img :src="pictures[indexPic]" alt="">
             <i @click="nextPic" class="fas fa-chevron-circle-right"></i>
